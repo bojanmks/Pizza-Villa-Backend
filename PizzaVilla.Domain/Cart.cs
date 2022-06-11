@@ -12,7 +12,7 @@ namespace PizzaVilla.Domain
         public int? ProductId { get; set; }
         public int Amount { get; set; }
         public int? OrderId { get; set; }
-        public decimal? PriceWhenOrdered { get; set; }
+        public decimal? ProductPriceWhenOrdered { get; set; }
 
         public virtual User User { get; set; }
         public virtual Product Product { get; set; }

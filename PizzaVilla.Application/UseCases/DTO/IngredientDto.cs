@@ -18,6 +18,11 @@ namespace PizzaVilla.Application.UseCases.DTO
         public decimal Price { get; set; }
     }
 
+    public class IngredientOrderedDto : IngredientAdminDto
+    {
+        public decimal PriceWhenOrdered { get; set; }
+    }
+
     public class CreateIngredientDto
     {
         public string Name { get; set; }

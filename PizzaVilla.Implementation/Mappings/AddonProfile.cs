@@ -16,7 +16,7 @@ namespace PizzaVilla.Implementation.Mappings
             CreateMap<Addon, AddonDto>();
             CreateMap<Addon, AddonAdminDto>();
 
-            CreateMap<CartAddons, AddonDto>()
+            CreateMap<CartAddons, AddonOrderedDto>()
                 .AfterMap((src, dest, context) => context.Mapper.Map(src.Addon, dest));
 
             CreateMap<CreateAddonDto, Addon>();

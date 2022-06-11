@@ -22,11 +22,11 @@ namespace PizzaVilla.Implementation.Mappings
                 {
                     if (src.Product == null)
                     {
-                        dest.Price = src.Ingredients.Sum(x => x.Ingredient.Price) + (src.Addons != null && src.Addons.Any() ? src.Addons.Sum(x => x.Addon.Price) : 0) + OrderConstants.Price;
+                        dest.TotalPrice = src.Ingredients.Sum(x => x.Ingredient.Price) + (src.Addons != null && src.Addons.Any() ? src.Addons.Sum(x => x.Addon.Price) : 0) + OrderConstants.Price;
                     }
                     else
                     {
-                        dest.Price = src.Product.Price + (src.Addons != null && src.Addons.Any() ? src.Addons.Sum(x => x.Addon.Price) : 0);
+                        dest.TotalPrice = src.Product.Price + (src.Addons != null && src.Addons.Any() ? src.Addons.Sum(x => x.Addon.Price) : 0);
                     }
                 });
 

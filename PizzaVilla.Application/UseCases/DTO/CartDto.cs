@@ -9,10 +9,11 @@ namespace PizzaVilla.Application.UseCases.DTO
     public class CartDto : BaseDto
     {
         public ProductDto Product { get; set; }
-        public IEnumerable<IngredientDto> Ingredients { get; set; }
-        public IEnumerable<AddonDto> Addons { get; set; }
+        public IEnumerable<IngredientOrderedDto> Ingredients { get; set; }
+        public IEnumerable<AddonOrderedDto> Addons { get; set; }
         public int Amount { get; set; }
-        public decimal Price { get; set; }
+        public decimal TotalPrice { get; set; }
+        public decimal? ProductPriceWhenOrdered { get; set; }
     }
 
     public class AddItemToCartDto

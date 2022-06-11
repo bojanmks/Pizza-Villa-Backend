@@ -39,9 +39,24 @@ namespace PizzaVilla.Implementation.UseCases.Commands.Ef.Orders
 
             var usersCart = CartFunctions.GetUsersCart(Context, (int)_user.Id).ToList();
 
+            foreach(var item in usersCart)
+            {
+                item.ProductPriceWhenOrdered = item.Product?.Price;
+
+                foreach(var ingredient in item.Ingredients)
+                {
+                    ingredient.PriceWhenOrdered = ingredient.Ingredient.Price;
+                }
+
+                foreach(var addon in item.Addons)
+                {
+                    addon.PriceWhenOrdered = addon.Addon.Price;
+                }
+            }
+
             var newOrder = new Order
             {
-                TotalPrice = _mapper.Map<IEnumerable<CartDto>>(usersCart).Sum(x => x.Price * x.Amount),
+                TotalPrice = _mapper.Map<IEnumerable<CartDto>>(usersCart).Sum(x => x.TotalPrice * x.Amount),
                 UserId = (int)_user.Id,
                 CartItems = usersCart
             };

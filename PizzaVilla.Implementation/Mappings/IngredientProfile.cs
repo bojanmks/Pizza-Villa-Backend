@@ -22,7 +22,7 @@ namespace PizzaVilla.Implementation.Mappings
             CreateMap<ProductsIngredients, IngredientAdminDto>()
                 .AfterMap((src, dest, context) => context.Mapper.Map(src.Ingredient, dest));
 
-            CreateMap<CartIngredients, IngredientDto>()
+            CreateMap<CartIngredients, IngredientOrderedDto>()
                 .AfterMap((src, dest, context) => context.Mapper.Map(src.Ingredient, dest));
 
             CreateMap<CreateIngredientDto, Ingredient>();

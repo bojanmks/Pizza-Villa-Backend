@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PizzaVilla.DataAccess;
 
 namespace PizzaVilla.DataAccess.Migrations
 {
     [DbContext(typeof(PVDbContext))]
-    partial class PVDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220611180850_RenamedThePriceWhenOrderedColumnInCartToProductPriceWhenOrdered")]
+    partial class RenamedThePriceWhenOrderedColumnInCartToProductPriceWhenOrdered
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
