@@ -1,0 +1,12 @@
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\bin\Debug\net5.0\PizzaVilla.Domain.deps.json
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\bin\Debug\net5.0\PizzaVilla.Domain.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\bin\Debug\net5.0\ref\PizzaVilla.Domain.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\bin\Debug\net5.0\PizzaVilla.Domain.pdb
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.AssemblyInfoInputs.cache
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.AssemblyInfo.cs
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.csproj.CoreCompileInputs.cache
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\ref\PizzaVilla.Domain.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.pdb
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.csproj.AssemblyReference.cache

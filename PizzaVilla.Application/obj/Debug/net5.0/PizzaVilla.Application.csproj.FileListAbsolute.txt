@@ -1,0 +1,17 @@
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.Application.deps.json
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.Application.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\ref\PizzaVilla.Application.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.Application.pdb
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.DataAccess.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.Domain.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.DataAccess.pdb
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\bin\Debug\net5.0\PizzaVilla.Domain.pdb
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.csproj.AssemblyReference.cache
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.AssemblyInfoInputs.cache
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.AssemblyInfo.cs
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.csproj.CoreCompileInputs.cache
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.csproj.CopyComplete
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\ref\PizzaVilla.Application.dll
+D:\Sve\ASP\PizzaVilla\PizzaVilla.Application\obj\Debug\net5.0\PizzaVilla.Application.pdb

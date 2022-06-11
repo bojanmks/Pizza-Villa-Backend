@@ -1,0 +1,374 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj",
+        "projectName": "PizzaVilla.Api",
+        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj",
+        "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
+        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj"
+              },
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+              },
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
+              },
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+        "projectName": "PizzaVilla.Application",
+        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+        "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
+        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
+        "projectName": "PizzaVilla.DataAccess",
+        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
+        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+        "projectName": "PizzaVilla.Domain",
+        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+        "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
+        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj",
+        "projectName": "PizzaVilla.Implementation",
+        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj",
+        "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
+        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj"
+              },
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+              },
+              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

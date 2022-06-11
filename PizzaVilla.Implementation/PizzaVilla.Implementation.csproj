@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="FluentValidation" Version="11.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaVilla.Application\PizzaVilla.Application.csproj" />
+    <ProjectReference Include="..\PizzaVilla.DataAccess\PizzaVilla.DataAccess.csproj" />
+    <ProjectReference Include="..\PizzaVilla.Domain\PizzaVilla.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
