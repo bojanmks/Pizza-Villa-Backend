@@ -37,20 +37,20 @@ namespace PizzaVilla.Implementation.UseCases.Commands.Ef.Cart
 
         public void Execute(AddItemToCartDto request)
         {
-            request.AddonsIds = request.AddonsIds?.Distinct();
-            request.IngredientsIds = request.IngredientsIds?.Distinct();
+            request.AddonIds = request.AddonIds?.Distinct();
+            request.IngredientIds = request.IngredientIds?.Distinct();
 
             _validator.ValidateAndThrow(request);
 
             var usersCart = CartFunctions.GetUsersCart(Context, (int)_user.Id);
 
             var elementInCart = usersCart.FirstOrDefault(x => x.ProductId == request.ProductId
-                                                            && (((request.AddonsIds == null || !request.AddonsIds.Any()) && !x.Addons.Any()) ||
-                                                            (request.AddonsIds != null && x.Addons.Select(y => y.AddonId).All(y => request.AddonsIds.Contains(y))
-                                                            && x.Addons.Count() == request.AddonsIds.Count()))
-                                                            && (request.IngredientsIds == null 
-                                                            || (x.Ingredients.Select(y => y.IngredientId).All(y => request.IngredientsIds.Contains(y)) 
-                                                            && x.Ingredients.Count() == request.IngredientsIds.Count()))
+                                                            && (((request.AddonIds == null || !request.AddonIds.Any()) && !x.Addons.Any()) ||
+                                                            (request.AddonIds != null && x.Addons.Select(y => y.AddonId).All(y => request.AddonIds.Contains(y))
+                                                            && x.Addons.Count() == request.AddonIds.Count()))
+                                                            && (request.IngredientIds == null 
+                                                            || (x.Ingredients.Select(y => y.IngredientId).All(y => request.IngredientIds.Contains(y)) 
+                                                            && x.Ingredients.Count() == request.IngredientIds.Count()))
                                                         );
 
             if(elementInCart != null)

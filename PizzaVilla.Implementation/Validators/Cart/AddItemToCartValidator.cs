@@ -17,8 +17,8 @@ namespace PizzaVilla.Implementation.Validators.Cart
         public AddItemToCartValidator(PVDbContext context, IApplicationActor user)
         {
             RuleFor(x => x)
-                .Must(x => (x.IngredientsIds != null && x.IngredientsIds.Count() >= OrderConstants.MinIngredients && x.IngredientsIds.Count() <= OrderConstants.MaxIngredients && x.ProductId == null)
-                                || (x.IngredientsIds == null || !x.IngredientsIds.Any()) && x.ProductId != null
+                .Must(x => (x.IngredientIds != null && x.IngredientIds.Count() >= OrderConstants.MinIngredients && x.IngredientIds.Count() <= OrderConstants.MaxIngredients && x.ProductId == null)
+                                || (x.IngredientIds == null || !x.IngredientIds.Any()) && x.ProductId != null
                 ).WithMessage($"You can either create an order for an existing product, or an order without a product and at least {OrderConstants.MinIngredients} but no more than {OrderConstants.MaxIngredients} ingredients.")
                 .Must(x => CartFunctions.GetUsersCart(context, (int)user.Id).Sum(x => x.Amount) < CartConstants.MaxItems)
                 .WithMessage("You can't have any more items in your cart.");
@@ -27,11 +27,11 @@ namespace PizzaVilla.Implementation.Validators.Cart
                 .Must(x => x == null || context.Products.Any(y => y.Id == x))
                 .WithMessage("Selected product doesn't exist.");
 
-            RuleFor(x => x.IngredientsIds)
+            RuleFor(x => x.IngredientIds)
                 .Must(x => (x == null || !x.Any()) || (x.All(y => context.Ingredients.Any(z => z.Id == y && z.IsActive))))
                 .WithMessage("Some of the selected ingredients don't exist.");
 
-            RuleFor(x => x.AddonsIds)
+            RuleFor(x => x.AddonIds)
                 .Cascade(CascadeMode.Stop)
                 .Must(x => x == null || x.All(y => context.Addons.Any(z => z.Id == y && z.IsActive)))
                 .WithMessage("Some of the selected addons don't exist.")

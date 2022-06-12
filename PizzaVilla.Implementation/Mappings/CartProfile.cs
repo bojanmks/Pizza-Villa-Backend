@@ -33,14 +33,14 @@ namespace PizzaVilla.Implementation.Mappings
             CreateMap<AddItemToCartDto, Cart>()
                 .ForMember(
                     dest => dest.Ingredients,
-                    opt => opt.MapFrom(src => src.IngredientsIds.Select(x => new CartIngredients
+                    opt => opt.MapFrom(src => src.IngredientIds.Select(x => new CartIngredients
                     {
                         IngredientId = x
                     }))
                 )
                 .ForMember(
                     dest => dest.Addons,
-                    opt => opt.MapFrom(src => src.AddonsIds.Select(x => new CartAddons
+                    opt => opt.MapFrom(src => src.AddonIds.Select(x => new CartAddons
                     {
                         AddonId = x
                     }))

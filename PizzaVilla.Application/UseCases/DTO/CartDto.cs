@@ -19,8 +19,8 @@ namespace PizzaVilla.Application.UseCases.DTO
     public class AddItemToCartDto
     {
         public int? ProductId { get; set; }
-        public IEnumerable<int> IngredientsIds { get; set; }
-        public IEnumerable<int> AddonsIds { get; set; }
+        public IEnumerable<int> IngredientIds { get; set; }
+        public IEnumerable<int> AddonIds { get; set; }
     }
 
     public class SetCartAmountDto : BaseDto
