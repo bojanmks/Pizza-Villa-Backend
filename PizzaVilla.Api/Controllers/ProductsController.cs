@@ -44,7 +44,7 @@ namespace PizzaVilla.Api.Controllers
         [AllowAnonymous]
         [HttpGet]
         [ProducesResponseType(typeof(PagedResponse<ProductDto>), 200)]
-        public IActionResult Get([FromQuery] BasePagedSearch search, [FromServices] IGetProductsQuery query)
+        public IActionResult Get([FromQuery] ProductSearch search, [FromServices] IGetProductsQuery query)
         {
             return Ok(_handler.HandleQuery(query, search));
         }

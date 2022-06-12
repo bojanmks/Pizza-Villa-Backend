@@ -26,13 +26,37 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Products
             _mapper = mapper;
         }
 
-        public PagedResponse<ProductDto> Execute(BasePagedSearch request)
+        public PagedResponse<ProductDto> Execute(ProductSearch request)
         {
             var query = Context.Products.OrderBy(x => x.Name).Where(x => x.IsActive);
 
             if (!string.IsNullOrEmpty(request.Keyword))
             {
                 query = query.Where(x => x.Name.Contains(request.Keyword) || x.Ingredients.Any(i => i.Ingredient.Name.Contains(request.Keyword)));
+            }
+
+            if(request.CategoryIds != null && request.CategoryIds.Any())
+            {
+                query = query.Where(x => request.CategoryIds.Contains(x.CategoryId));
+            }
+
+            if(request.SortOrder != null)
+            {
+                switch(request.SortOrder)
+                {
+                    case ProductsOrder.NameAsc:
+                        query = query.OrderBy(x => x.Name);
+                        break;
+                    case ProductsOrder.NameDesc:
+                        query = query.OrderByDescending(x => x.Name);
+                        break;
+                    case ProductsOrder.PriceAsc:
+                        query = query.OrderBy(x => x.Price);
+                        break;
+                    case ProductsOrder.PriceDesc:
+                        query = query.OrderByDescending(x => x.Price);
+                        break;
+                }
             }
 
             if (request.PerPage == null)
