@@ -20,7 +20,7 @@ namespace PizzaVilla.Application.UseCases.DTO
 
     public class IngredientOrderedDto : IngredientAdminDto
     {
-        public decimal PriceWhenOrdered { get; set; }
+        public decimal? PriceWhenOrdered { get; set; }
     }
 
     public class CreateIngredientDto
