@@ -83,7 +83,12 @@ namespace PizzaVilla.Api
 
             app.UseStaticFiles();
             app.UseRouting();
-            app.UseCors(options => options.SetIsOriginAllowed((host) => true));
+            //app.UseCors(options => options.SetIsOriginAllowed((host) => true).AllowAnyMethod());
+            app.UseCors(builder => builder
+                 .AllowAnyOrigin()
+                 .AllowAnyMethod()
+                 .AllowAnyHeader()
+            );
             app.UseMiddleware<GlobalExceptionHandler>();
             app.UseAuthentication();
             app.UseAuthorization();
