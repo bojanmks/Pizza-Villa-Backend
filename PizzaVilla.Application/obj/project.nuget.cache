@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RG+EK4P8Np+UM2wM3i/hzt2MDMrzQhyjx9ZYaR/6FMOFO7E1LJEQgEQmfZWQPtETtepjFfckhi0H+dKbIKor2g==",
+  "dgSpecHash": "TGte+fsYkm795K/PVk+YykKwDR5CI4F1H7LCwA8+25tijkFvqo/BXSZXhv6K4bzoTFlqZQITmoTZNf4Sj5wcTA==",
   "success": true,
-  "projectFilePath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+  "projectFilePath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bojan\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Bojan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

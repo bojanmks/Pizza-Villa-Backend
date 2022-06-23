@@ -228,7 +228,7 @@ namespace PizzaVilla.DataAccess.Migrations
                     ProductId = table.Column<int>(type: "int", nullable: true),
                     Amount = table.Column<int>(type: "int", nullable: false, defaultValue: 1),
                     OrderId = table.Column<int>(type: "int", nullable: true),
-                    PriceWhenOrdered = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    ProductPriceWhenOrdered = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IsActive = table.Column<bool>(type: "bit", nullable: false, defaultValue: true),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),

@@ -10,7 +10,7 @@ using PizzaVilla.DataAccess;
 namespace PizzaVilla.DataAccess.Migrations
 {
     [DbContext(typeof(PVDbContext))]
-    [Migration("20220611122325_initial")]
+    [Migration("20220617190224_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -126,11 +126,11 @@ namespace PizzaVilla.DataAccess.Migrations
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<decimal?>("PriceWhenOrdered")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int?>("ProductId")
                         .HasColumnType("int");
+
+                    b.Property<decimal?>("ProductPriceWhenOrdered")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");

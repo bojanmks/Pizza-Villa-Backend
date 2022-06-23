@@ -67,6 +67,8 @@ namespace PizzaVilla.Api
                 var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
             });
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,6 +83,7 @@ namespace PizzaVilla.Api
 
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseCors(options => options.SetIsOriginAllowed((host) => true));
             app.UseMiddleware<GlobalExceptionHandler>();
             app.UseAuthentication();
             app.UseAuthorization();

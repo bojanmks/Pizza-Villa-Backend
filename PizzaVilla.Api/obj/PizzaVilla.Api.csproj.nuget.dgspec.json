@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj": {}
+    "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj": {}
   },
   "projects": {
-    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj": {
+    "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj",
+        "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj",
         "projectName": "PizzaVilla.Api",
-        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj",
+        "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Api\\PizzaVilla.Api.csproj",
         "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Api\\obj\\",
+        "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,17 +28,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj"
               },
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
               },
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
               },
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj"
               }
             }
           }
@@ -60,6 +60,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -96,14 +100,14 @@
         }
       }
     },
-    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
+    "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+        "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
         "projectName": "PizzaVilla.Application",
-        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+        "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
         "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\obj\\",
+        "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +124,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
               }
             }
           }
@@ -164,14 +168,14 @@
         }
       }
     },
-    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+    "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
+        "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
         "projectName": "PizzaVilla.DataAccess",
-        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
+        "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\obj\\",
+        "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -188,8 +192,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
               }
             }
           }
@@ -242,14 +246,14 @@
         }
       }
     },
-    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+    "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+        "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
         "projectName": "PizzaVilla.Domain",
-        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+        "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
         "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\obj\\",
+        "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -296,14 +300,14 @@
         }
       }
     },
-    "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj": {
+    "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj",
+        "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj",
         "projectName": "PizzaVilla.Implementation",
-        "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj",
+        "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Implementation\\PizzaVilla.Implementation.csproj",
         "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-        "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Implementation\\obj\\",
+        "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -320,14 +324,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj"
               },
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
               },
-              "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
-                "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
+              "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj": {
+                "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj"
               }
             }
           }

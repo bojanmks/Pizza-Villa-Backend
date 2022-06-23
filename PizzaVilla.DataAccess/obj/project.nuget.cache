@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4qmcmgVDwRIXko6rg9DDcEONz6AR01MOohxpMzJtvPQak8sV68aayo1jsJZLoiBXrVLrcOeYB1y3/U96DbOc2w==",
+  "dgSpecHash": "Cpo6HoSJG7wdKd/7VU/vNm84mRybbgYg/+EW6g0QsaApDm/BCnQWyC5iQPq97VMI0opLj+RH9Znjw1A+u+wnXw==",
   "success": true,
-  "projectFilePath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
+  "projectFilePath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bojan\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Bojan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

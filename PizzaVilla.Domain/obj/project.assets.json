@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+      "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
       "projectName": "PizzaVilla.Domain",
-      "projectPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+      "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
       "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-      "outputPath": "D:\\Sve\\ASP\\PizzaVilla\\PizzaVilla.Domain\\obj\\",
+      "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
