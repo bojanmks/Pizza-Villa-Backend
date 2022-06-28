@@ -37,6 +37,7 @@ namespace PizzaVilla.Api.Controllers
         /// <response code="403">Forbidden.</response>
         /// <response code="500">Internal server error.</response>
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<CartDto>), 200)]
         public IActionResult Get([FromQuery] BaseSearch search, [FromServices] IGetCartQuery query)
         {
             return Ok(_handler.HandleQuery(query, search));
