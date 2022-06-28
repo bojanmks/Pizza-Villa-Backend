@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PizzaVilla.Application.UseCases.Queries.Addons
 {
-    public interface IGetAddonsQuery : IQuery<BasePagedSearch, PagedResponse<AddonDto>>
+    public interface IGetAddonsQuery : IQuery<BaseSearch, IEnumerable<AddonDto>>
     {
 
     }

@@ -26,7 +26,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Ingredients
             _mapper = mapper;
         }
 
-        public PagedResponse<IngredientDto> Execute(BasePagedSearch request)
+        public IEnumerable<IngredientDto> Execute(BaseSearch request)
         {
             var query = Context.Ingredients.OrderBy(x => x.Name).Where(x => x.IsActive);
 
@@ -35,23 +35,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Ingredients
                 query = query.Where(x => x.Name.Contains(request.Keyword));
             }
 
-            if (request.PerPage == null)
-            {
-                request.PerPage = 10;
-            }
-
-            if(request.Page == null)
-            {
-                request.Page = 1;
-            }
-
-            var response = new PagedResponse<IngredientDto>
-            {
-                TotalCount = query.Count(),
-                Page = request.Page.Value,
-                PerPage = request.PerPage.Value,
-                Data = query.Skip(request.ToSkip).Take(request.PerPage.Value).Select(x => _mapper.Map<IngredientDto>(x))
-            };
+            var response = query.Select(x => _mapper.Map<IngredientDto>(x)).ToList();
 
             return response;
         }

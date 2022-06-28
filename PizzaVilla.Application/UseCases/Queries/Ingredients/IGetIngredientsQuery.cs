@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PizzaVilla.Application.UseCases.Queries.Ingredients
 {
-    public interface IGetIngredientsQuery : IQuery<BasePagedSearch, PagedResponse<IngredientDto>>
+    public interface IGetIngredientsQuery : IQuery<BaseSearch, IEnumerable<IngredientDto>>
     {
 
     }

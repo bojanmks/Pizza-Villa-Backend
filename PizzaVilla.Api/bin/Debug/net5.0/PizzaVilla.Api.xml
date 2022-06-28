@@ -4,7 +4,7 @@
         <name>PizzaVilla.Api</name>
     </assembly>
     <members>
-        <member name="M:PizzaVilla.Api.Controllers.AddonsController.Get(PizzaVilla.Application.UseCases.DTO.Searches.BasePagedSearch,PizzaVilla.Application.UseCases.Queries.Addons.IGetAddonsQuery)">
+        <member name="M:PizzaVilla.Api.Controllers.AddonsController.Get(PizzaVilla.Application.UseCases.DTO.Searches.BaseSearch,PizzaVilla.Application.UseCases.Queries.Addons.IGetAddonsQuery)">
             <summary>
             Returns addons.
             </summary>
@@ -279,7 +279,7 @@
             <response code="403">Forbidden.</response>
             <response code="500">Internal server error.</response>
         </member>
-        <member name="M:PizzaVilla.Api.Controllers.IngredientsController.Get(PizzaVilla.Application.UseCases.DTO.Searches.BasePagedSearch,PizzaVilla.Application.UseCases.Queries.Ingredients.IGetIngredientsQuery)">
+        <member name="M:PizzaVilla.Api.Controllers.IngredientsController.Get(PizzaVilla.Application.UseCases.DTO.Searches.BaseSearch,PizzaVilla.Application.UseCases.Queries.Ingredients.IGetIngredientsQuery)">
             <summary>
             Returns ingredients.
             </summary>

@@ -38,8 +38,8 @@ namespace PizzaVilla.Api.Controllers
         /// <response code="500">Internal server error.</response>
         [HttpGet]
         [AllowAnonymous]
-        [ProducesResponseType(typeof(PagedResponse<IngredientDto>), 200)]
-        public IActionResult Get([FromQuery] BasePagedSearch search, [FromServices] IGetIngredientsQuery query)
+        [ProducesResponseType(typeof(IEnumerable<IngredientDto>), 200)]
+        public IActionResult Get([FromQuery] BaseSearch search, [FromServices] IGetIngredientsQuery query)
         {
             return Ok(_handler.HandleQuery(query, search));
         }

@@ -26,7 +26,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Addons
             _mapper = mapper;
         }
 
-        public PagedResponse<AddonDto> Execute(BasePagedSearch request)
+        public IEnumerable<AddonDto> Execute(BaseSearch request)
         {
             var query = Context.Addons.OrderBy(x => x.Name).Where(x => x.IsActive);
 
@@ -35,23 +35,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Addons
                 query = query.Where(x => x.Name.Contains(request.Keyword));
             }
 
-            if (request.PerPage == null)
-            {
-                request.PerPage = 10;
-            }
-
-            if (request.Page == null)
-            {
-                request.Page = 1;
-            }
-
-            var response = new PagedResponse<AddonDto>
-            {
-                TotalCount = query.Count(),
-                Page = request.Page.Value,
-                PerPage = request.PerPage.Value,
-                Data = query.Skip(request.ToSkip).Take(request.PerPage.Value).Select(x => _mapper.Map<AddonDto>(x))
-            };
+            var response = query.Select(x => _mapper.Map<AddonDto>(x)).ToList();
 
             return response;
         }
