@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FJD+lDw9vyqFAuhAIwJby9H/JFXTSdBeB1fMtbGRqmPJtNBgYCVdrakMncnR+0ZVp373fnC57HbL3SGamlCpqA==",
+  "dgSpecHash": "P+L9DOlT2RtZo9HWlehLhJTTaE+gOnMiRk9jOU5FJyx9AK61FHz/yOOf2NuokPaUWcKFyyi+7siBPJzhzLJVNQ==",
   "success": true,
-  "projectFilePath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
+  "projectFilePath": "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.Domain\\PizzaVilla.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

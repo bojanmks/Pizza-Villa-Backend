@@ -34,3 +34,15 @@ D:\Sve\Angular\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.c
 D:\Sve\Angular\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.dll
 D:\Sve\Angular\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\ref\PizzaVilla.Domain.dll
 D:\Sve\Angular\PizzaVilla\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.pdb
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\bin\Debug\net5.0\PizzaVilla.Domain.deps.json
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\bin\Debug\net5.0\PizzaVilla.Domain.dll
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\bin\Debug\net5.0\PizzaVilla.Domain.pdb
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.csproj.AssemblyReference.cache
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.AssemblyInfoInputs.cache
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.AssemblyInfo.cs
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.csproj.CoreCompileInputs.cache
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.dll
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\refint\PizzaVilla.Domain.dll
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\PizzaVilla.Domain.pdb
+D:\Sve\Web\Pizza-Villa-Backend\PizzaVilla.Domain\obj\Debug\net5.0\ref\PizzaVilla.Domain.dll

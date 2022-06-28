@@ -8150,19 +8150,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bojan\\.nuget\\packages\\": {}
+    "C:\\Users\\Boki\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+      "projectUniqueName": "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
       "projectName": "PizzaVilla.Application",
-      "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
-      "packagesPath": "C:\\Users\\Bojan\\.nuget\\packages\\",
-      "outputPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.Application\\obj\\",
+      "projectPath": "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.Application\\PizzaVilla.Application.csproj",
+      "packagesPath": "C:\\Users\\Boki\\.nuget\\packages\\",
+      "outputPath": "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bojan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Boki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8176,8 +8176,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
-              "projectPath": "D:\\Sve\\Angular\\PizzaVilla\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
+            "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj": {
+              "projectPath": "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj"
             }
           }
         }
@@ -8216,7 +8216,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
