@@ -29,7 +29,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.AuditLog
 
         public PagedResponse<AuditLogDto> Execute(BasePagedDateSearch request)
         {
-            var query = Context.AuditLog.OrderBy(x => x.ExecutionDateTime).AsQueryable();
+            var query = Context.AuditLog.OrderByDescending(x => x.ExecutionDateTime).AsQueryable();
 
             if(!string.IsNullOrEmpty(request.Keyword))
             {
