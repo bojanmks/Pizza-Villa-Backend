@@ -6,6 +6,7 @@ using PizzaVilla.Application.UseCases.Commands.Orders;
 using PizzaVilla.Application.UseCases.DTO;
 using PizzaVilla.Application.UseCases.DTO.Searches;
 using PizzaVilla.Application.UseCases.Queries.Orders;
+using PizzaVilla.Application.UseCases.Queries.Responses;
 using PizzaVilla.Implementation;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,7 @@ namespace PizzaVilla.Api.Controllers
         /// <response code="403">Forbidden.</response>
         /// <response code="500">Internal server error.</response>
         [HttpGet]
+        [ProducesResponseType(typeof(PagedResponse<OrderDto>), 200)]
         public IActionResult Get([FromQuery] PagedDateSearch search, [FromServices] IGetOrdersQuery query)
         {
             return Ok(_handler.HandleQuery(query, search));
@@ -54,6 +56,7 @@ namespace PizzaVilla.Api.Controllers
         /// <response code="404">Order with the given id doesn't exist.</response>
         /// <response code="500">Internal server error.</response>
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(OrderDto), 200)]
         public IActionResult Get(int id, [FromServices] IFindOrderQuery query)
         {
             return Ok(_handler.HandleQuery(query, id));
