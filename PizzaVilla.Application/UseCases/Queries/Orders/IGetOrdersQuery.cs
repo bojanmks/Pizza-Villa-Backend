@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PizzaVilla.Application.UseCases.Queries.Orders
 {
-    public interface IGetOrdersQuery : IQuery<PagedDateSearch, PagedResponse<OrderDto>>
+    public interface IGetOrdersQuery : IQuery<BasePagedDateSearch, PagedResponse<OrderDto>>
     {
     }
 }

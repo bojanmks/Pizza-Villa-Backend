@@ -26,9 +26,14 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Orders
             _mapper = mapper;
         }
 
-        public PagedResponse<OrderDto> Execute(PagedDateSearch request)
+        public PagedResponse<OrderDto> Execute(BasePagedDateSearch request)
         {
             var query = Context.Orders.AsQueryable();
+
+            if(!string.IsNullOrEmpty(request.Keyword))
+            {
+                query = query.Where(x => x.User.Username.Contains(request.Keyword) || x.User.Email.Contains(request.Keyword));
+            }
 
             if (request.DateFrom != null)
             {

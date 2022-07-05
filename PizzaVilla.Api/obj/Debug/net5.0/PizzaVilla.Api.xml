@@ -364,7 +364,7 @@
             <response code="409">Data already exists in database.</response>
             <response code="500">Internal server error.</response>
         </member>
-        <member name="M:PizzaVilla.Api.Controllers.OrdersController.Get(PizzaVilla.Application.UseCases.DTO.Searches.PagedDateSearch,PizzaVilla.Application.UseCases.Queries.Orders.IGetOrdersQuery)">
+        <member name="M:PizzaVilla.Api.Controllers.OrdersController.Get(PizzaVilla.Application.UseCases.DTO.Searches.BasePagedDateSearch,PizzaVilla.Application.UseCases.Queries.Orders.IGetOrdersQuery)">
             <summary>
             Returns orders.
             </summary>
