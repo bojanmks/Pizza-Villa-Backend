@@ -32,7 +32,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Orders
 
             if(!string.IsNullOrEmpty(request.Keyword))
             {
-                query = query.Where(x => x.User.Username.Contains(request.Keyword) || x.User.Email.Contains(request.Keyword));
+                query = query.Where(x => x.User.Username.Contains(request.Keyword) || x.User.Email.Contains(request.Keyword) || x.Id.ToString().Contains(request.Keyword));
             }
 
             if (request.DateFrom != null)
