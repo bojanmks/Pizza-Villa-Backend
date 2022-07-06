@@ -28,7 +28,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Orders
 
         public PagedResponse<OrderDto> Execute(BasePagedDateSearch request)
         {
-            var query = Context.Orders.AsQueryable();
+            var query = Context.Orders.OrderByDescending(x => x.CreatedAt).AsQueryable();
 
             if(!string.IsNullOrEmpty(request.Keyword))
             {
