@@ -17,6 +17,10 @@ namespace PizzaVilla.Implementation.Validators.Ingredients
                 .Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage("Ingredient name is required.")
                 .Must(x => !context.Ingredients.Any(i => i.Name == x)).WithMessage("Ingredient name {PropertyValue} is taken.");
+
+            RuleFor(x => x.Price)
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("Price cannot be less than 0.");
         }
     }
 }

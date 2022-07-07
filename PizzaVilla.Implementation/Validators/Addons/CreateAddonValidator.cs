@@ -17,6 +17,10 @@ namespace PizzaVilla.Implementation.Validators.Addons
                 .Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage("Addon name is required.")
                 .Must(x => !context.Addons.Any(a => a.Name == x)).WithMessage("Addon name {PropertyValue} is taken.");
+
+            RuleFor(x => x.Price)
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("Price cannot be less than 0.");
         }
     }
 }

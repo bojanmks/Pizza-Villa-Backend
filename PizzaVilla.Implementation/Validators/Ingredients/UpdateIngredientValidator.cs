@@ -23,6 +23,11 @@ namespace PizzaVilla.Implementation.Validators.Ingredients
                 .Must((ingredient, name) => !context.Ingredients.Any(i => i.Name == name && i.Id != ingredient.Id))
                 .WithMessage("Ingredient name {PropertyValue} is taken.")
                 .OverridePropertyName("Name");
+
+            RuleFor(x => x.Data.Price)
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("Price cannot be less than 0.")
+                .OverridePropertyName("Price");
         }
     }
 }
