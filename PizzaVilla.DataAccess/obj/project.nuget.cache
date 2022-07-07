@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "orX4xFYC54BrueCKjos+Qabg+SpgvpjPC50ilwEWijwkvPakmKNj+AqhJf1FnHIYr/w2LFB7CKtOljBcdFaoXw==",
+  "dgSpecHash": "GzDYobUTwx8WXxIt03O4lWUpebKESdf9Ast3+walJwYETgtlKMVgRhSBLTywNJyL3FBeoCs0ivG1Gt/G4BFgxA==",
   "success": true,
   "projectFilePath": "D:\\Sve\\Web\\Pizza-Villa-Backend\\PizzaVilla.DataAccess\\PizzaVilla.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -135,10 +135,7 @@
     "C:\\Users\\Boki\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Boki\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Boki\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Boki\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Boki\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Boki\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Boki\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Boki\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
