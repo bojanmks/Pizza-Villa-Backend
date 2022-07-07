@@ -77,7 +77,7 @@ namespace PizzaVilla.DataAccess
                     switch (entry.State)
                     {
                         case EntityState.Added:
-                            e.IsActive = true;
+                            // e.IsActive = true;
                             e.CreatedAt = DateTime.UtcNow;
                             break;
                         case EntityState.Modified:

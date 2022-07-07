@@ -28,7 +28,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Products
 
         public PagedResponse<ProductDto> Execute(ProductSearch request)
         {
-            var query = Context.Products.OrderBy(x => x.Name).Where(x => x.IsActive);
+            var query = Context.Products.OrderBy(x => x.Name).Where(x => x.IsActive.Value);
 
             if (!string.IsNullOrEmpty(request.Keyword))
             {

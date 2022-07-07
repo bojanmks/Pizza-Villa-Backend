@@ -14,7 +14,7 @@ namespace PizzaVilla.DataAccess.Configurations
     {
         public void Configure(EntityTypeBuilder<T> builder)
         {
-            builder.Property(x => x.IsActive).HasDefaultValue(false);
+            builder.Property(x => x.IsActive).HasDefaultValue(true);
             builder.Property(x => x.UpdatedBy).HasMaxLength(50);
 
             builder.HasIndex(x => x.IsActive);

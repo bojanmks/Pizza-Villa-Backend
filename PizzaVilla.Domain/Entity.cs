@@ -10,7 +10,7 @@ namespace PizzaVilla.Domain
     {
         public int Id { get; set; }
         public DateTime CreatedAt { get; set; }
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public string UpdatedBy { get; set; }
     }

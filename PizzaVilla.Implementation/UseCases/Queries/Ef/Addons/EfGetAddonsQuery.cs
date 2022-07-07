@@ -28,7 +28,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Addons
 
         public IEnumerable<AddonDto> Execute(BaseSearch request)
         {
-            var query = Context.Addons.OrderBy(x => x.Name).Where(x => x.IsActive);
+            var query = Context.Addons.OrderBy(x => x.Name).Where(x => x.IsActive.Value);
 
             if (!string.IsNullOrEmpty(request.Keyword))
             {

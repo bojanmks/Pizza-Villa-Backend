@@ -27,7 +27,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Categories
 
         public IEnumerable<ProductCategoryDto> Execute(BaseSearch request)
         {
-            var query = Context.ProductCategories.OrderBy(x => x.Name).Where(x => x.IsActive);
+            var query = Context.ProductCategories.OrderBy(x => x.Name).Where(x => x.IsActive.Value);
 
             if (!string.IsNullOrEmpty(request.Keyword))
             {

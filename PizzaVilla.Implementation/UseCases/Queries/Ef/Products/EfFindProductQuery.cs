@@ -27,7 +27,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Products
 
         public ProductDto Execute(int id)
         {
-            var product = Context.Products.FirstOrDefault(x => x.Id == id && x.IsActive);
+            var product = Context.Products.FirstOrDefault(x => x.Id == id && x.IsActive.Value);
 
             if (product == null)
             {

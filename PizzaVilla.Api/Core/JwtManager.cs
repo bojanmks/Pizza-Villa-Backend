@@ -39,7 +39,7 @@ namespace PizzaVilla.Api.Core
                 throw new UnauthorizedAccessException("User with those credentials doesn't exist.");
             }
 
-            if(!user.IsActive)
+            if(!user.IsActive.Value)
             {
                 throw new UnauthorizedAccessException("Your account is deactivated, please contact us for more info.");
             }

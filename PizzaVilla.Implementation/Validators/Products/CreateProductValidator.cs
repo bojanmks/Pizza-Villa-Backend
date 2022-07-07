@@ -29,13 +29,13 @@ namespace PizzaVilla.Implementation.Validators.Products
             RuleFor(x => x.CategoryId)
                 .Cascade(CascadeMode.Stop)
                 .NotEmpty().WithMessage("Category Id is required.")
-                .Must(x => context.ProductCategories.Any(c => c.Id == x && c.IsActive)).WithMessage("Category with an id of {PropertyValue} doesn't exist.");
+                .Must(x => context.ProductCategories.Any(c => c.Id == x && c.IsActive.Value)).WithMessage("Category with an id of {PropertyValue} doesn't exist.");
 
             RuleFor(x => x.IngredientIds)
                 .Cascade(CascadeMode.Stop)
                 .Must(x => x != null).WithMessage("Ingredient Ids are required.")
                 .Must(x => x.Count() >= 2).WithMessage("A product can't have less than 2 ingredients.")
-                .Must(x => x.All(i => context.Ingredients.Any(idb => idb.Id == i && idb.IsActive)))
+                .Must(x => x.All(i => context.Ingredients.Any(idb => idb.Id == i && idb.IsActive.Value)))
                 .WithMessage("Some of the provided ingredients do not exist.");
         }
     }

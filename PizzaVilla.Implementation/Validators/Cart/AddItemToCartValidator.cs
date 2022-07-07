@@ -28,12 +28,12 @@ namespace PizzaVilla.Implementation.Validators.Cart
                 .WithMessage("Selected product doesn't exist.");
 
             RuleFor(x => x.IngredientIds)
-                .Must(x => (x == null || !x.Any()) || (x.All(y => context.Ingredients.Any(z => z.Id == y && z.IsActive))))
+                .Must(x => (x == null || !x.Any()) || (x.All(y => context.Ingredients.Any(z => z.Id == y && z.IsActive.Value))))
                 .WithMessage("Some of the selected ingredients don't exist.");
 
             RuleFor(x => x.AddonIds)
                 .Cascade(CascadeMode.Stop)
-                .Must(x => x == null || x.All(y => context.Addons.Any(z => z.Id == y && z.IsActive)))
+                .Must(x => x == null || x.All(y => context.Addons.Any(z => z.Id == y && z.IsActive.Value)))
                 .WithMessage("Some of the selected addons don't exist.")
                 .Must(x => x == null || x.Count() <= OrderConstants.MaxAddons)
                 .WithMessage("Some of the selected addons don't exist.");

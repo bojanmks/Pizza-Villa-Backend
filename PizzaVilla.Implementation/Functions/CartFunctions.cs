@@ -14,11 +14,11 @@ namespace PizzaVilla.Implementation.Functions
         public static IQueryable<Cart> GetUsersCart(PVDbContext context, int userId)
         {
             return context.Cart.Where(x =>
-                    ((x.Ingredients.Any() && x.Ingredients.All(i => i.Ingredient.IsActive))
-                    || (x.Product != null && x.Product.IsActive))
+                    ((x.Ingredients.Any() && x.Ingredients.All(i => i.Ingredient.IsActive.Value))
+                    || (x.Product != null && x.Product.IsActive.Value))
                     && x.UserId == userId
                     && x.OrderId == null
-                    && x.IsActive
+                    && x.IsActive.Value
                 );
         }
 
@@ -27,7 +27,7 @@ namespace PizzaVilla.Implementation.Functions
             return context.Cart.FirstOrDefault(x => x.Id == cartId 
                                                     && x.UserId == userId 
                                                     && x.OrderId == null 
-                                                    && x.IsActive
+                                                    && x.IsActive.Value
                                               );
         }
     }
