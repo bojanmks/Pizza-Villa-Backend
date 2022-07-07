@@ -139,9 +139,9 @@ namespace PizzaVilla.Api.Controllers
         [HttpPost]
         public IActionResult Post([FromForm] CreateProductApiDto data, [FromServices] ICreateProductCommand command)
         {
-            if(data.Image != null)
+            if(data.ImageFile != null)
             {
-                data.ImageName = ResizeAndUploadImage(data.Image);
+                data.ImageName = ResizeAndUploadImage(data.ImageFile);
             } 
             else
             {
@@ -169,9 +169,9 @@ namespace PizzaVilla.Api.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromForm] CreateProductApiDto data, [FromServices] IUpdateProductCommand command)
         {
-            if (data.Image != null)
+            if (data.ImageFile != null)
             {
-                data.ImageName = ResizeAndUploadImage(data.Image);
+                data.ImageName = ResizeAndUploadImage(data.ImageFile);
             }
 
             var updateData = new UpdateProductDto

@@ -9,6 +9,6 @@ namespace PizzaVilla.Api.DTO
 {
     public class CreateProductApiDto : CreateProductDto
     {
-        public IFormFile Image { get; set; }
+        public IFormFile ImageFile { get; set; }
     }
 }
