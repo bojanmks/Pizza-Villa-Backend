@@ -23,10 +23,6 @@ namespace PizzaVilla.Implementation.Validators.Addons
                 .Must((addon, name) => !context.Addons.Any(a => a.Name == name && a.Id != addon.Id))
                 .WithMessage("Addon name {PropertyValue} is taken.")
                 .OverridePropertyName("Name");
-
-            RuleFor(x => x.Data.Price)
-                .NotEmpty().WithMessage("Addon price is required.")
-                .OverridePropertyName("Price");
         }
     }
 }
