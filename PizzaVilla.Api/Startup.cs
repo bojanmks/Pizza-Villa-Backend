@@ -27,6 +27,8 @@ using PizzaVilla.Application.Emails;
 using PizzaVilla.Implementation.Emails;
 using Microsoft.AspNetCore.Http;
 using AutoMapper;
+using System.Globalization;
+using System.Threading;
 
 namespace PizzaVilla.Api
 {
@@ -92,6 +94,17 @@ namespace PizzaVilla.Api
             app.UseMiddleware<GlobalExceptionHandler>();
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.Use(async (context, next) =>
+            {
+                var currentThreadCulture = (CultureInfo)Thread.CurrentThread.CurrentCulture.Clone();
+                currentThreadCulture.NumberFormat = NumberFormatInfo.InvariantInfo;
+
+                Thread.CurrentThread.CurrentCulture = currentThreadCulture;
+                Thread.CurrentThread.CurrentUICulture = currentThreadCulture;
+
+                await next();
+            });
 
             app.UseEndpoints(endpoints =>
             {
