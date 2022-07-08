@@ -22,10 +22,23 @@ namespace PizzaVilla.Implementation.Mappings
             CreateMap<CreateUserDto, User>()
                 .ForMember(
                     dest => dest.UseCases,
-                    opt => opt.MapFrom(src => src.UseCaseIds.Select(x => new UsersUseCases { 
+                    opt => opt.MapFrom(src => src.UseCaseIds.Select(x => new UsersUseCases {
                         UseCaseId = x
                     }))
-                );
+                )
+                .ForMember(
+                    dest => dest.Password,
+                    opt => opt.Ignore()
+                )
+                .AfterMap(
+                    (src, dest) =>
+                    {
+                        if (!string.IsNullOrEmpty(src.Password))
+                        {
+                            dest.Password = src.Password;
+                        }
+                    }
+                 );
             CreateMap<RegisterUserDto, User>();
         }
     }

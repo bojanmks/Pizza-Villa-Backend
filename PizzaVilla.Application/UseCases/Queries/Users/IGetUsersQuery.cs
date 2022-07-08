@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PizzaVilla.Application.UseCases.Queries.Users
 {
-    public interface IGetUsersQuery : IQuery<BasePagedSearch, PagedResponse<UserDto>>
+    public interface IGetUsersQuery : IQuery<BasePagedSearch, PagedResponse<UserDetailedDto>>
     {
     }
 }

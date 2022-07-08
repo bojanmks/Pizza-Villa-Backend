@@ -36,7 +36,11 @@ namespace PizzaVilla.Implementation.UseCases.Commands.Ef.Users
 
             var user = Context.Users.Find(request.Id);
 
-            request.Data.Password = BCrypt.Net.BCrypt.HashPassword(request.Data.Password);
+            if(!string.IsNullOrEmpty(request.Data.Password))
+            {
+                request.Data.Password = BCrypt.Net.BCrypt.HashPassword(request.Data.Password);
+            }
+            
             request.Data.UseCaseIds = request.Data.UseCaseIds.Distinct();
 
             _mapper.Map(request.Data, user);

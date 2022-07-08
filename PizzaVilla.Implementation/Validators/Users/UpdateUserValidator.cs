@@ -36,9 +36,7 @@ namespace PizzaVilla.Implementation.Validators.Users
 
             RuleFor(x => x.Data.Password)
                 .Cascade(CascadeMode.Stop)
-                .NotEmpty()
-                .WithMessage("Password is required.")
-                .Matches(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\@\$\!\%\*\?\&\#])[A-Za-z\d@$!%*?&]{8,}$")
+                .Matches(@"(^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\@\$\!\%\*\?\&\#])[A-Za-z\d@$!%*?&]{8,}$)|^$")
                 .WithMessage("Password needs to be at least 8 characters long and contain at least one: Uppercase character, Lowercase character, Number, Special character.")
                 .OverridePropertyName("Password");
         }

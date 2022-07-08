@@ -26,7 +26,7 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Users
             _mapper = mapper;
         }
 
-        public PagedResponse<UserDto> Execute(BasePagedSearch request)
+        public PagedResponse<UserDetailedDto> Execute(BasePagedSearch request)
         {
             var query = Context.Users.AsQueryable();
 
@@ -45,12 +45,12 @@ namespace PizzaVilla.Implementation.UseCases.Queries.Ef.Users
                 request.Page = 1;
             }
 
-            var response = new PagedResponse<UserDto>
+            var response = new PagedResponse<UserDetailedDto>
             {
                 TotalCount = query.Count(),
                 Page = request.Page.Value,
                 PerPage = request.PerPage.Value,
-                Data = query.Skip(request.ToSkip).Take(request.PerPage.Value).Select(x => _mapper.Map<UserDto>(x))
+                Data = query.Skip(request.ToSkip).Take(request.PerPage.Value).ToList().Select(x => _mapper.Map<UserDetailedDto>(x))
             };
 
             return response;
